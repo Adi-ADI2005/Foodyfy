@@ -5,8 +5,13 @@ A modern Full Stack Food Delivery Web Application built using the MERN Stack.
 
 ## 🌐 Live Demo
 
-🚀 Visit the Live Application:  
-https://foodyfyapplication.web.app/
+<div align="center">
+
+<a href="https://foodyfyapplication.web.app/" target="_blank">
+  <img src="https://img.shields.io/badge/🚀%20Visit%20Foodyfy-Live%20Demo-ff6b35?style=for-the-badge&logo=firebase&logoColor=white" />
+</a>
+
+</div>
 
 ---
 
