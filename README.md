@@ -26,10 +26,73 @@ Backend:
 - JWT
 - Socket.io
   Folder Structure:
-  ~~~
-  FOOD-DELIVERY-APP/
+  from pathlib import Path
+from textwrap import dedent
+
+content = dedent("""
+# 🍔 Foodyfy — Full Stack MERN Food Delivery Application
+
+Foodyfy is a modern and scalable Full Stack Food Delivery Web Application built using the MERN Stack.
+
+The platform allows users to browse food items, add products to cart, place orders, and manage profiles, while admins can manage foods, categories, orders, and users through a dedicated dashboard.
+
+---
+
+# 🚀 Features
+
+## 👤 User Features
+- User Authentication & Authorization
+- Browse Food Items
+- Food Details Page
+- Add to Cart
+- Checkout System
+- Order Management
+- User Profile Management
+- Responsive Design
+
+## 🛡️ Admin Features
+- Admin Dashboard
+- Manage Food Items
+- Manage Categories
+- Manage Orders
+- Manage Users
+- Upload Food Images
+
+## ⚡ Advanced Features
+- Real-Time Updates with Socket.io
+- Redux Toolkit State Management
+- Cloudinary Image Upload
+- JWT Authentication
+- REST API Architecture
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- Redux Toolkit
+- Axios
+- CSS3
+
+## Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Socket.io
+- Cloudinary
+
+---
+
+# 📂 Folder Structure
+
+```bash
+FOOD-DELIVERY-APP/
 │
-├── client/                     # Frontend React App
+├── client/
 │   ├── public/
 │   ├── src/
 │   │   ├── assets/
@@ -68,7 +131,7 @@ Backend:
 │   ├── package.json
 │   └── vite.config.js
 │
-├── server/                     # Backend Express Server
+├── server/
 │   ├── config/
 │   │   ├── cloudinary.js
 │   │   └── db.js
@@ -101,6 +164,7 @@ Backend:
 │   └── package.json
 │
 └── README.md
+
 
 ## Installation
 
