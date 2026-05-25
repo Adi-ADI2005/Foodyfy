@@ -164,7 +164,7 @@ FOOD-DELIVERY-APP/
 │   └── package.json
 │
 └── README.md
-
+```
 
 ## Installation
 
