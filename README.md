@@ -2,6 +2,14 @@
 
 A modern Full Stack Food Delivery Web Application built using the MERN Stack.
 
+
+## 🌐 Live Demo
+
+🚀 Visit the Live Application:  
+https://foodyfyapplication.web.app/
+
+---
+
 ## Features
 - User Authentication
 - Food Ordering System
