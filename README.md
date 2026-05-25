@@ -201,6 +201,8 @@ VITE_API_URL=http://localhost:8000/api
 
 ## Folder Structure
 client/  -> Frontend React App
+
+
 server/  -> Backend Express Server
 
 ## Future Improvements
