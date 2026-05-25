@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #FF2B2B;
+  --primary-dark: #cc1f1f;
+  --primary-light: rgba(255, 43, 43, 0.12);
+  --primary-glow: rgba(255, 43, 43, 0.25);
+  --bg: #050505;
+  --bg-secondary: #0d0d0d;
+  --bg-tertiary: #111111;
+  --card-bg: linear-gradient(145deg, #111111, #1a1a1a);
+  --card-border: rgba(255, 255, 255, 0.06);
+  --text: #ffffff;
+  --text-muted: #aaaaaa;
+  --text-dim: #666666;
+  --white: #ffffff;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 12px 40px rgba(255, 43, 43, 0.18);
+  --shadow-glow: 0 0 30px rgba(255, 43, 43, 0.15);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --border: 1px solid rgba(255, 255, 255, 0.06);
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 43, 43, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 43, 43, 0.55);
+}
+
+::selection {
+  background: rgba(255, 43, 43, 0.2);
+  color: #fff;
+}
+
+.form-row.two-col {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 540px) {
+  .form-row.two-col {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,555 @@
+.food-details-page {
+  min-height: 100vh;
+  padding: 90px 0 60px;
+  background: #050505;
+}
+
+.food-details-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 9px 18px;
+  border-radius: 20px;
+  color: #888;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  border-color: rgba(255, 43, 43, 0.3);
+  color: #FF2B2B;
+  background: rgba(255, 43, 43, 0.06);
+}
+
+.food-details-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: linear-gradient(145deg, #111111, #161616);
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: 28px;
+}
+
+.food-images-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-image {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.veg-indicator {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+}
+
+.vd {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.veg-indicator.veg { color: #22c55e; }
+.veg-indicator.veg .vd { background: #22c55e; }
+.veg-indicator.non-veg { color: #FF2B2B; }
+.veg-indicator.non-veg .vd { background: #FF2B2B; }
+
+.image-thumbnails {
+  display: flex;
+  gap: 8px;
+}
+
+.thumb {
+  width: 70px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.07);
+  transition: border-color 0.2s;
+  opacity: 0.7;
+}
+
+.thumb.active,
+.thumb:hover {
+  border-color: #FF2B2B;
+  opacity: 1;
+}
+
+.food-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.food-cat-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #FF2B2B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.food-detail-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+.food-detail-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.fd-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.star-fill {
+  color: #f59e0b;
+  fill: #f59e0b;
+}
+
+.fd-reviews {
+  color: #555;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.fd-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.food-detail-desc {
+  color: #666;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.food-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 14px;
+}
+
+.food-section h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #888;
+  margin: 0 0 10px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ingredient-chip {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  color: #777;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.nutrition-item {
+  background: rgba(255, 43, 43, 0.06);
+  border: 1px solid rgba(255, 43, 43, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nu-val {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #FF2B2B;
+  display: block;
+}
+
+.nu-label {
+  font-size: 0.72rem;
+  color: #555;
+}
+
+.addons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.addon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.addon-item.selected {
+  border-color: rgba(255, 43, 43, 0.3);
+  background: rgba(255, 43, 43, 0.06);
+}
+
+.addon-item input { display: none; }
+
+.addon-name {
+  flex: 1;
+  font-size: 0.88rem;
+  color: #aaa;
+}
+
+.addon-item.selected .addon-name {
+  color: #ffffff;
+}
+
+.addon-price {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #FF2B2B;
+}
+
+.food-action-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.qty-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  padding: 6px 10px;
+}
+
+.qty-selector button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  transition: all 0.15s;
+  color: #aaa;
+}
+
+.qty-selector button:hover {
+  background: #FF2B2B;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 43, 43, 0.3);
+}
+
+.qty-selector span {
+  font-weight: 800;
+  font-size: 1rem;
+  min-width: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.price-display {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.fd-price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.fd-original {
+  font-size: 0.9rem;
+  color: #444;
+  text-decoration: line-through;
+}
+
+.add-to-cart-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #FF2B2B, #ff5555);
+  color: white;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(255, 43, 43, 0.35);
+  transition: all 0.2s;
+  min-width: 160px;
+}
+
+.add-to-cart-main:hover {
+  box-shadow: 0 8px 32px rgba(255, 43, 43, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Reviews */
+.reviews-section {
+  background: linear-gradient(145deg, #111111, #161616);
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.reviews-section h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 28px;
+}
+
+.reviews-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 32px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card {
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s;
+}
+
+.review-card:hover {
+  border-color: rgba(255, 43, 43, 0.1);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.reviewer-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF2B2B, #ff5555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  font-size: 0.9rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.reviewer-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #ffffff;
+  margin: 0 0 3px;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.review-stars .star-fill {
+  font-size: 12px;
+}
+
+.review-date {
+  font-size: 0.75rem;
+  color: #444;
+  margin-left: auto;
+}
+
+.review-comment {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.no-reviews {
+  color: #444;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 30px;
+}
+
+.add-review {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  height: fit-content;
+}
+
+.add-review h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 16px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rating-selector {
+  display: flex;
+  gap: 6px;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #333;
+  transition: color 0.15s;
+  padding: 2px;
+}
+
+.star-btn.active {
+  color: #f59e0b;
+}
+
+.star-btn svg { fill: currentColor; }
+
+.review-form textarea {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  font-size: 0.88rem;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+}
+
+.review-form textarea::placeholder {
+  color: #333;
+}
+
+.review-form textarea:focus {
+  border-color: rgba(255, 43, 43, 0.35);
+  background: rgba(255, 43, 43, 0.03);
+}
+
+.submit-review-btn {
+  background: linear-gradient(135deg, #FF2B2B, #ff5555);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  box-shadow: 0 6px 18px rgba(255, 43, 43, 0.3);
+}
+
+.submit-review-btn:not(:disabled):hover {
+  box-shadow: 0 8px 24px rgba(255, 43, 43, 0.45);
+}
+
+.submit-review-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .food-details-layout { grid-template-columns: 1fr; }
+  .reviews-layout { grid-template-columns: 1fr; }
+  .nutrition-grid { grid-template-columns: repeat(2, 1fr); }
+}

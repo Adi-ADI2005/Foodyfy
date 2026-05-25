@@ -1,0 +1,76 @@
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  background: #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.intro-brand-img {
+  width: min(680px, 88vw);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 80px rgba(255, 43, 43, 0.55));
+  position: relative;
+  z-index: 1;
+}
+
+.intro-progress-wrap {
+  position: relative;
+  z-index: 1;
+  width: min(360px, 60vw);
+  height: 3px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  margin-top: 52px;
+  overflow: hidden;
+}
+
+.intro-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #FF2B2B, #ff6b6b, #FF2B2B);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 18px rgba(255, 43, 43, 0.8);
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.intro-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.intro-glow-1 {
+  width: 600px;
+  height: 600px;
+  background: #FF2B2B;
+  top: -200px;
+  left: -150px;
+  animation: glow-drift 6s ease-in-out infinite alternate;
+}
+
+.intro-glow-2 {
+  width: 400px;
+  height: 400px;
+  background: #ff6b6b;
+  bottom: -150px;
+  right: -120px;
+  animation: glow-drift 6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glow-drift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(40px, 30px) scale(1.2); }
+}

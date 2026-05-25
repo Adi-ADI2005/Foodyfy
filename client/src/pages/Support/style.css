@@ -1,0 +1,138 @@
+.support-page {
+  min-height: 100vh;
+  padding: 100px 0 60px;
+  background: #050505;
+}
+
+.support-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.support-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.support-header h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+}
+
+.support-header p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.support-card {
+  background: linear-gradient(145deg, #111111, #161616);
+  border-radius: 20px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.support-card:hover {
+  border-color: rgba(255, 43, 43, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.support-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 43, 43, 0.1);
+  color: #FF2B2B;
+}
+
+.support-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.support-card p {
+  color: #555;
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.support-action-btn {
+  background: linear-gradient(135deg, #FF2B2B, #ff5555);
+  color: white;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 4px;
+  box-shadow: 0 4px 14px rgba(255, 43, 43, 0.25);
+}
+
+.support-action-btn:hover {
+  box-shadow: 0 6px 20px rgba(255, 43, 43, 0.4);
+  transform: translateY(-1px);
+}
+
+.faq-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 28px;
+}
+
+.faq-item {
+  background: linear-gradient(145deg, #111111, #161616);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: border-color 0.2s;
+}
+
+.faq-item:hover {
+  border-color: rgba(255, 43, 43, 0.12);
+}
+
+.faq-item h4 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.faq-item p {
+  color: #555;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
