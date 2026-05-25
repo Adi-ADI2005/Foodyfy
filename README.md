@@ -169,7 +169,7 @@ FOOD-DELIVERY-APP/
 ## Installation
 
 ### Clone Repository
-git clone: [https://github.com/your-username/foodyfy.git](https://github.com/Adi-ADI2005/Foodyfy)
+git clone: [https://github.comAdi-ADI2005/Foodyfy](https://github.com/Adi-ADI2005/Foodyfy)
 
 ### Install Backend
 cd server
