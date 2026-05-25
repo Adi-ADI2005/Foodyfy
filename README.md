@@ -25,11 +25,87 @@ Backend:
 - MongoDB
 - JWT
 - Socket.io
+  Folder Structure:
+  ~~~
+  FOOD-DELIVERY-APP/
+│
+├── client/                     # Frontend React App
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   │   ├── FoodCard/
+│   │   │   ├── Footer/
+│   │   │   ├── IntroAnimation/
+│   │   │   ├── Loader/
+│   │   │   └── Navbar/
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Admin/
+│   │   │   ├── Cart/
+│   │   │   ├── Checkout/
+│   │   │   ├── FoodDetails/
+│   │   │   ├── Home/
+│   │   │   ├── Login/
+│   │   │   ├── Orders/
+│   │   │   ├── Profile/
+│   │   │   ├── Register/
+│   │   │   └── Support/
+│   │   │
+│   │   ├── redux/
+│   │   │   ├── slices/
+│   │   │   └── store.js
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── App.css
+│   │   └── index.css
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/                     # Backend Express Server
+│   ├── config/
+│   │   ├── cloudinary.js
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── categoryController.js
+│   │   ├── foodController.js
+│   │   ├── orderController.js
+│   │   ├── paymentController.js
+│   │   └── userController.js
+│   │
+│   ├── middlewares/
+│   │   ├── adminMiddleware.js
+│   │   ├── authMiddleware.js
+│   │   ├── errorMiddleware.js
+│   │   └── uploadMiddleware.js
+│   │
+│   ├── models/
+│   ├── routes/
+│   ├── socket/
+│   │   └── socketServer.js
+│   │
+│   ├── .env
+│   ├── config.js
+│   ├── db.js
+│   ├── index.js
+│   ├── seed.js
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
 
 ## Installation
 
 ### Clone Repository
-git clone https://github.com/your-username/foodyfy.git
+git clone: [https://github.com/your-username/foodyfy.git](https://github.com/Adi-ADI2005/Foodyfy)
 
 ### Install Backend
 cd server
